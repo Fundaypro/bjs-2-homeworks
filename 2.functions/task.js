@@ -1,31 +1,29 @@
 // Задание 1
 function getArrayParams(arr) {
-  let min,max,sum,avg;
-
-  // Ваш код
-
-  return { min:min, max:max, avg:avg };
+  return { min:arr.sort((x,y)=> x-y)[0], 
+           max:arr.sort((x,y)=> x-y)[arr.length-1], 
+           avg:Math.floor(arr.reduce((ac,val)=>ac+=val,0)/arr.length*100)/100 
+  };
 }
 
 // Задание 2
 function worker(arr) {
-  let sum;
-
-  // Ваш код
-
-  return sum;
+  return arr.reduce((ac,val)=>ac+=val,0);
 }
 
 function makeWork(arrOfArr, func) {
-  let max
+  let max = 0;
 
-  // Ваш кода
-  // for ...
+  for (let i = 0;i<arrOfArr.length ;i++) {
+    max = Math.max(max,func(arrOfArr[i]))
+  }
   
   return max
 }
 
 // Задание 3
 function worker2(arr) {
-  // Ваш код
+  arr = arr.sort((x,y)=> x-y)
+
+  return arr[arr.length-1]-arr[0];
 }
