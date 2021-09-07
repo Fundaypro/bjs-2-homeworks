@@ -1,5 +1,5 @@
 function compareArrays(arr1, arr2) {
-  return  arr1.join()===arr2.join();
+  return  arr1.length === arr2.length && arr1.every((el,i)=>el==arr2[i]);
 }
 
 function advancedFilter(arr) {
