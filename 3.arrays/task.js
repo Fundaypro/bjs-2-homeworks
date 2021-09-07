@@ -1,15 +1,7 @@
 function compareArrays(arr1, arr2) {
-  let result;
-
-  // Ваш код
-
-  return result; // boolean
+  return  arr1.join()===arr2.join();
 }
 
 function advancedFilter(arr) {
-  let resultArr;
-
-  // Ваш код
-
-  return resultArr; // array
+  return arr.filter(e =>e > 0 && e%3 === 0).map(e=> e*=10);
 }
