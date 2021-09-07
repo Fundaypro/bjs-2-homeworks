@@ -22,14 +22,14 @@ function solveEquation(a, b, c) {
 }
 
 function calculateTotalMortgage(percent, contribution, amount, date) {
-  // console.log(date)
-  // let moth = new Date(date).
+  // if(typeof moth)
+  // let moth = (date.getFullYear() - new Date().getFullYear()) *12
   // console.log(moth)
   // let S = amount-contribution;
   // let P = percent/12/10;
-  // let n = date;
+  // let n = moth;
   // let pay = S * (P + P / (((1 + P)^n) - 1));
   //     pay = Math.floor(pay*100)/100
-  // return pay*date
+  // return pay*moth
 }
 //calculateTotalMortgage(10,1000,50000,12)
