@@ -77,7 +77,7 @@ class Student {
     this.subjects={}
   }
   addMark(num,subject){
-    if(num >=1 || num <=5) {
+    if(num >=1 && num <=5) {
       if(this.subjects[subject]) this.subjects[subject].push(+num)
       else {
         this.subjects[subject] = [];
