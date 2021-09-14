@@ -22,7 +22,6 @@ class Triangle {
   }
   getPerimeter() {
     let { a, b, c } = this;
-    if (!(a && b && c)) throw new Error("Треугольник с такими сторонами не существует")
     return a + b + c;
   }
   getArea() {
@@ -32,7 +31,6 @@ class Triangle {
   }
 }
 function getTriangle(a, b, c) {
-  let tri;
   try {
     return new Triangle(a, b, c);
   } catch {
